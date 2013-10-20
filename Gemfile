@@ -4,8 +4,14 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0.rc2'
 
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-gem 'pg'
+group :development do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 gem 'carrierwave'
 gem 'mini_magick', '3.5.0'
 
