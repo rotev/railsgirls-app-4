@@ -1,4 +1,5 @@
 <%= form_for(@idea) do |f| %>
+<%#=collection_check_boxes(@idea, :comments_ids, Comment.all, :id, :user_name )%>
   <% if @idea.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@idea.errors.count, "error") %> prohibited this idea from being saved:</h2>
