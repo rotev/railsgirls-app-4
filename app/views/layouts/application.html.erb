@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Railsgirls</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Railsgirls</title>
+    <link href='http://railsgirls.co.il/bootstrap/css/bootstrap.css' rel='stylesheet'>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <nav class='navbar navbar-default navbar-fixed-top'>
+      <div class='container'>
+        <a class='navbar-brand' href='/'>The Idea app</a>
+        <ul class='nav navbar-nav'>
+          <li class='active'>
+            <a href='/ideas'>Ideas</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<%= yield %>
+    <div class='container'>
+      <%= yield %>
+    </div>
 
-</body>
+    <footer>
+      <div class='container'>
+        Rails Girls 2014
+      </div>
+    </footer>
+
+  </body>
 </html>
