@@ -17,7 +17,7 @@
       <tr>
         <td><%= idea.name %></td>
         <td><%= idea.description %></td>
-        <td><%= image_tag idea.picture_url(:thumb) if idea.picture? %></td>
+        <td><%= image_tag idea.picture_url(:thumb), class: 'img-circle' if idea.picture? %></td>
         <td class="buttons">
           <%= link_to idea, class: 'btn btn-default' do %>
             <span class="glyphicon glyphicon-search"></span>
