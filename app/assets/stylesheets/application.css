@@ -24,3 +24,7 @@ th { border-bottom: 1px solid #DDD; }
 td.buttons {
 	width: 70px;
 }
+
+.field {
+	margin-bottom: 20px;
+}
