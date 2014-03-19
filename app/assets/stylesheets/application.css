@@ -13,7 +13,7 @@
  */
  
 body { 
-	padding-top: 100px; 
+	padding-top: 80px; 
 	font-family: Arvo; 
 	background-image: url(/assets/light_grey.png); 
 }
@@ -27,4 +27,8 @@ td.buttons {
 
 .field {
 	margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
 }
